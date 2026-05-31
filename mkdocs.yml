@@ -1,0 +1,105 @@
+site_name: Insurance AI Learning Library
+site_description: A bilingual Traditional Chinese and English learning library for insurance POS, sales journey AI, BRD reformatting, and AI use case prioritisation.
+site_author: Learning Library
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+
+plugins:
+  - search
+  - tags
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: zh
+          name: 繁體中文
+          default: true
+          build: true
+          nav_translations:
+            Home: 首頁
+            Start Here: 快速導覽
+            Client POS / Sales Platform Preparation: 客戶 POS 與銷售平台準備
+            Overview: 總覽
+            Learning Index: 學習索引
+            Preparation Overview: 準備總覽
+            POS Assessment Playbook: POS 評估手冊
+            Insurance POS Basics: 保險 POS 基礎
+            POS Basics: POS 基礎
+            Product Configuration: 產品配置
+            Sales Journey AI: 銷售旅程 AI
+            Sales Journey AI Notes: 銷售旅程 AI 筆記
+            AI Opportunities in Insurance: 保險 AI 機會
+            Identification Playbook: 識別手冊
+            Talking Points: 討論句子
+            Product BRD / Template Reformat: 產品 BRD 與模板重整
+            BRD Reformat Playbook: BRD 重整手冊
+            AI Use Case Prioritisation: AI 用例優先級
+            Prioritisation Playbook: 優先級手冊
+            Use Case Matrix: 用例矩陣
+            Meeting / Discussion Outputs: 會議與討論輸出
+            Discovery Questions: 探索問題
+            Project Alignment Questions: 項目對焦問題
+        - locale: en
+          name: English
+          build: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  alternate:
+    - name: 繁體中文
+      link: /
+      lang: zh-Hant
+    - name: English
+      link: /en/
+      lang: en
+
+nav:
+  - Home: index.md
+  - Start Here: start-here.md
+  - Client POS / Sales Platform Preparation:
+      - Overview: client-pos-preparation/index.md
+      - Learning Index: client-pos-preparation/learning-index.md
+      - Preparation Overview: client-pos-preparation/overview.md
+      - POS Assessment Playbook: client-pos-preparation/pos-assessment-playbook.md
+  - Insurance POS Basics:
+      - Overview: insurance-pos-basics/index.md
+      - POS Basics: insurance-pos-basics/pos-basics.md
+      - Product Configuration: insurance-pos-basics/product-configuration.md
+  - Sales Journey AI:
+      - Overview: sales-journey-ai/index.md
+      - Sales Journey AI Notes: sales-journey-ai/ai-notes.md
+      - AI Opportunities in Insurance: sales-journey-ai/opportunities.md
+      - Identification Playbook: sales-journey-ai/identification-playbook.md
+      - Talking Points: sales-journey-ai/talking-points.md
+  - Product BRD / Template Reformat:
+      - Overview: product-brd-template-reformat/index.md
+      - BRD Reformat Playbook: product-brd-template-reformat/brd-reformat-playbook.md
+  - AI Use Case Prioritisation:
+      - Overview: ai-use-case-prioritisation/index.md
+      - Prioritisation Playbook: ai-use-case-prioritisation/prioritisation-playbook.md
+      - Use Case Matrix: ai-use-case-prioritisation/use-case-matrix.md
+  - Meeting / Discussion Outputs:
+      - Overview: meeting-outputs/index.md
+      - Talking Points: meeting-outputs/talking-points.md
+      - Discovery Questions: meeting-outputs/discovery-questions.md
+      - Project Alignment Questions: meeting-outputs/project-alignment-questions.md
