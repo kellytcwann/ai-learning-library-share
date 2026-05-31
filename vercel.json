@@ -1,5 +1,5 @@
 {
-  "installCommand": "python -m pip install -r requirements.txt",
-  "buildCommand": "python -m mkdocs build",
+  "installCommand": "python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt",
+  "buildCommand": ". .venv/bin/activate && mkdocs build",
   "outputDirectory": "site"
 }
