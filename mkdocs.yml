@@ -5,6 +5,8 @@ site_author: Learning Library
 theme:
   name: material
   language: zh
+  favicon: assets/images/profile-icon.png
+  logo: assets/images/profile-icon.png
   features:
     - navigation.sections
     - navigation.expand
